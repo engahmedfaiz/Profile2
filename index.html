@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="AHMED Freelancer">أحمد فايز - مطور برمجيات محترف</title>
+    
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS - Animate On Scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ملفات CSS المخصصة -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- القائمة العلوية -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="navbar-logo">أحمد فايز</a>
+            <button class="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="#home" class="navbar-link active" data-translate="Home">الرئيسية</a></li>
+                <li class="navbar-item"><a href="#about" class="navbar-link" data-translate="About">عني</a></li>
+                <li class="navbar-item"><a href="#skills" class="navbar-link" data-translate="Skills">المهارات</a></li>
+                <li class="navbar-item"><a href="#portfolio" class="navbar-link" data-translate="Projects">المشاريع</a></li>
+                <li class="navbar-item"><a href="#achievements" class="navbar-link" data-translate="Achievements">الإنجازات</a></li>
+                <li class="navbar-item"><a href="#testimonials" class="navbar-link" data-translate="Testimonials">آراء العملاء</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-link" data-translate="Contact">اتصل بي</a></li>
+                <!-- زر تبديل اللغة سيتم إضافته هنا بواسطة JavaScript -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- قسم المقدمة (Hero) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <p class="hero-subtitle" data-translate="Hello!">مرحباً!</p>
+                <h1 class="hero-title" data-translate="I'm Ahmed Faiz">أنا <span>أحمد فايز</span></h1>
+                <h2 class="mb-4" data-translate="A Freelance Software Developer">مطور برمجيات مستقل</h2>
+                <p class="hero-description" data-translate="I specialize in creating modern websites and mobile applications with a focus on user experience and performance.">أتخصص في تطوير مواقع الويب وتطبيقات الجوال العصرية مع التركيز على تجربة المستخدم والأداء.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary" data-translate="Hire me">وظفني</a>
+                    <a href="#portfolio" class="btn btn-outline" data-translate="My works">أعمالي</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/DSC_4458.png" alt="أحمد فايز">
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <!-- قسم من أنا (About) -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" data-translate="About Me">عني</h2>
+                <p class="section-subtitle" data-translate="Get to know me better">تعرف علي بشكل أفضل</p>
+            </div>
+            <div class="about-container">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="images/bg1.png" alt="أحمد فايز">
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h3 class="about-title" data-translate="Who am I?">من أنا؟</h3>
+                    <p class="about-text" data-translate="I am a passionate software developer with expertise in web and mobile application development. With a strong foundation in modern technologies, I create solutions that are not only functional but also user-friendly and visually appealing.">
+                        أنا مطور برمجيات شغوف بخبرة في تطوير تطبيقات الويب والجوال. مع أساس قوي في التقنيات الحديثة، أقوم بإنشاء حلول ليست وظيفية فحسب، بل سهلة الاستخدام وجذابة بصرياً أيضاً.
+                    </p>
+                    <div class="about-info">
+                        <div class="about-info-item">
+                            <i class="fas fa-user"></i>
+                            <span data-translate="Name:">الاسم: أحمد فايز علي</span>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span data-translate="Age:">العمر: 24</span>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span data-translate="Address:">العنوان: صنعاء، اليمن</span>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span data-translate="Email:">البريد الإلكتروني: engahmedfaiz5@gmail.com</span>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-phone"></i>
+                            <span data-translate="Phone:">الهاتف: +967-780-138-083</span>
+                        </div>
+                        <div class="about-info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span data-translate="Projects:">المشاريع: 20+</span>
+                        </div>
+                    </div>
+                    <div class="about-buttons">
+                        <a href="images/Ahmed Faiz Mashrah.pdf" class="btn btn-primary" download data-translate="Download CV">تحميل السيرة الذاتية</a>
+                        <a href="#contact" class="btn btn-outline" data-translate="Contact Me">اتصل بي</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات (Skills) -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" data-translate="My Skills">مهاراتي</h2>
+                <p class="section-subtitle" data-translate="What I'm good at">ما أجيده</p>
+            </div>
+            <div class="skills">
+                <div class="skills-container">
+                    <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="skills-category-title" data-translate="Web Development">تطوير الويب</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Laravel</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="skills-category-title" data-translate="Mobile Development">تطوير الجوال</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Flutter</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React Native</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Firebase</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>App Publishing</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="skills-category-title" data-translate="Design & Others">التصميم وأخرى</h3>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>UI/UX</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Figma</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Next.js</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأعمال (Portfolio) -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" data-translate="My Projects">مشاريعي</h2>
+                <p class="section-subtitle" data-translate="Recent works">أعمالي الحديثة</p>
+            </div>
+            <div class="portfolio-filter" data-aos="fade-up">
+                <div class="portfolio-filter-item active" data-filter="all" data-translate="All">الكل</div>
+                <div class="portfolio-filter-item" data-filter="web" data-translate="Web">الويب</div>
+                <div class="portfolio-filter-item" data-filter="mobile" data-translate="Mobile">الجوال</div>
+                <div class="portfolio-filter-item" data-filter="design" data-translate="Design">التصميم</div>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="images/project-4.png" alt="تطبيق متجر">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title" data-translate="Store Application">تطبيق متجر</h3>
+                        <p class="portfolio-category" data-translate="Mobile App">تطبيق جوال</p>
+                        <p class="portfolio-description" data-translate="A modern e-commerce mobile application built with Flutter.">تطبيق تجارة إلكترونية حديث مبني بواسطة Flutter.</p>
+                        <a href="Projct/Gadgets-Store-App-UI-master.zip" class="portfolio-link" data-translate="Download">تحميل</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="images/projct5-.jpeg" alt="موقع متجر إلكتروني">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title" data-translate="Online Store Website">موقع متجر إلكتروني</h3>
+                        <p class="portfolio-category" data-translate="Web Development">تطوير ويب</p>
+                        <p class="portfolio-description" data-translate="A responsive e-commerce website with modern design.">موقع تجارة إلكترونية متجاوب مع تصميم عصري.</p>
+                        <a href="Projct/m3.zip" class="portfolio-link" data-translate="Download">تحميل</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="images/projact.PNG" alt="معرض أعمال ويب">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title" data-translate="Web Portfolio">معرض أعمال ويب</h3>
+                        <p class="portfolio-category" data-translate="Web Development">تطوير ويب</p>
+                        <p class="portfolio-description" data-translate="A personal portfolio website with modern design.">موقع معرض أعمال شخصي بتصميم عصري.</p>
+                        <a href="#" class="portfolio-link" data-translate="View Project">عرض المشروع</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <img src="images/thumb.PNG" alt="منصة etjer">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">etjer platform</h3>
+                        <p class="portfolio-category" data-translate="Web Development">تطوير ويب</p>
+                        <p class="portfolio-description" data-translate="An e-commerce platform built with Next.js.">منصة تجارة إلكترونية مبنية بواسطة Next.js.</p>
+                        <a href="https://www.etjer.store" class="portfolio-link" data-translate="Visit Website">زيارة الموقع</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="images/projct8.png" alt="تصميم ويب">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title" data-translate="Web Design">تصميم ويب</h3>
+                        <p class="portfolio-category" data-translate="UI/UX Design">تصميم واجهة المستخدم</p>
+                        <p class="portfolio-description" data-translate="A modern web design project with focus on user experience.">مشروع تصميم ويب حديث مع التركيز على تجربة المستخدم.</p>
+                        <a href="#" class="portfolio-link" data-translate="View Project">عرض المشروع</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile" data-aos="fade-up" data-aos-delay="600">
+                    <div class="portfolio-image">
+                        <img src="images/allscr.png" alt="تطبيق مقهى">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title" data-translate="Coffee Shop App">تطبيق مقهى</h3>
+                        <p class="portfolio-category" data-translate="Mobile App">تطبيق جوال</p>
+                        <p class="portfolio-description" data-translate="A coffee shop mobile application with online ordering.">تطبيق مقهى للجوال مع طلب عبر الإنترنت.</p>
+                        <a href="Projct/Drink-Order-App-UI-master.zip" class="portfolio-link" data-translate="Download">تحميل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الشهادات والإنجازات (Achievements) -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" data-translate="Achievements">الإنجازات</h2>
+                <p class="section-subtitle" data-translate="Certifications & Milestones">الشهادات والمعالم</p>
+            </div>
+            <div class="achievements">
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023</span>
+                            <h3 class="timeline-title" data-translate="Laravel Certification">شهادة Laravel</h3>
+                            <p class="timeline-description" data-translate="Completed advanced Laravel framework certification from IEEE.">أكملت شهادة إطار عمل Laravel المتقدمة من IEEE.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023</span>
+                            <h3 class="timeline-title" data-translate="UI/UX Design Certification">شهادة تصميم واجهة المستخدم</h3>
+                            <p class="timeline-description" data-translate="Completed UI/UX design certification with Figma from IEEE.">أكملت شهادة تصميم واجهة المستخدم باستخدام Figma من IEEE.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023</span>
+                            <h3 class="timeline-title" data-translate="Flutter Development">تطوير Flutter</h3>
+                            <p class="timeline-description" data-translate="Completed mobile application development with Flutter certification from IEEE.">أكملت شهادة تطوير تطبيقات الجوال باستخدام Flutter من IEEE.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <span class="timeline-date">2021-2025</span>
+                            <h3 class="timeline-title" data-translate="Bachelor's Degree">درجة البكالوريوس</h3>
+                            <p class="timeline-description" data-translate="Bachelor's degree in Information Technology from AL-Razi University.">درجة البكالوريوس في تقنية المعلومات من جامعة الرازي.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء (Testimonials) -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" data-translate="Testimonials">آراء العملاء</h2>
+                <p class="section-subtitle" data-translate="What clients say">ماذا يقول العملاء</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial-item" data-aos="fade-up">
+                    <p class="testimonial-content" data-translate="Ahmed is an exceptional developer who delivered our e-commerce platform ahead of schedule. His attention to detail and problem-solving skills are impressive.">
+                        أحمد مطور استثنائي قام بتسليم منصة التجارة الإلكترونية الخاصة بنا قبل الموعد المحدد. اهتمامه بالتفاصيل ومهارات حل المشكلات لديه مثيرة للإعجاب.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="محمد علي">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>محمد علي</h4>
+                            <p>مدير شركة تجارية</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                    <p class="testimonial-content" data-translate="Working with Ahmed was a pleasure. He understood our requirements perfectly and delivered a mobile app that exceeded our expectations.">
+                        العمل مع أحمد كان ممتعاً. لقد فهم متطلباتنا بشكل مثالي وقدم تطبيقاً للجوال تجاوز توقعاتنا.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="سارة أحمد">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>سارة أحمد</h4>
+                            <p>مديرة تسويق</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                    <p class="testimonial-content" data-translate="Ahmed redesigned our website and the results were amazing. Our user engagement increased by 40% and the new design is much more user-friendly.">
+                        قام أحمد بإعادة تصميم موقعنا على الويب وكانت النتائج مذهلة. زادت مشاركة المستخدمين لدينا بنسبة 40٪ والتصميم الجديد أكثر سهولة في الاستخدام.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="خالد محمود">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>خالد محمود</h4>
+                            <p>صاحب شركة ناشئة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل (Contact) -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" data-translate="Contact Me">اتصل بي</h2>
+                <p class="section-subtitle" data-translate="Get in touch">تواصل معي</p>
+            </div>
+            <div class="contact">
+                <div class="contact-container">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 data-translate="Address">العنوان</h4>
+                                <p>صنعاء، اليمن</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 data-translate="Phone">الهاتف</h4>
+                                <p><a href="tel:+967780138083">+967 780 138 083</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 data-translate="Email">البريد الإلكتروني</h4>
+                                <p><a href="mailto:engahmedfaiz5@gmail.com">engahmedfaiz5@gmail.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 data-translate="Website">الموقع الإلكتروني</h4>
+                                <p><a href="#">FreelancerDevAhmed.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="https://engahmedfaiz.github.io" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://facebook.com/احمد فايز علي مشرح" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/mshrh4440" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-aos="fade-left" method="POST" action="https://formsubmit.co/engahmedfaiz5@gmail.com">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" required data-translate-placeholder="Your Name" placeholder="الاسم">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-control" required data-translate-placeholder="Your Email" placeholder="البريد الإلكتروني">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" required data-translate-placeholder="Subject" placeholder="الموضوع">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-control" rows="5" required data-translate-placeholder="Message" placeholder="الرسالة"></textarea>
+                        </div>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://engahmedfaiz.github.io/portfolio/contect.html">
+                        <button type="submit" class="btn btn-primary" data-translate="Send Message">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>أحمد فايز</h3>
+                    <p data-translate="Freelance Software Developer">مطور برمجيات مستقل</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-translate="Quick Links">روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home" data-translate="Home">الرئيسية</a></li>
+                        <li><a href="#about" data-translate="About">عني</a></li>
+                        <li><a href="#portfolio" data-translate="Projects">المشاريع</a></li>
+                        <li><a href="#contact" data-translate="Contact">اتصل بي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4 data-translate="Services">الخدمات</h4>
+                    <ul>
+                        <li data-translate="Web Development">تطوير الويب</li>
+                        <li data-translate="Mobile Apps">تطبيقات الجوال</li>
+                        <li data-translate="UI/UX Design">تصميم واجهة المستخدم</li>
+                        <li data-translate="SEO">تحسين محركات البحث</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4 data-translate="Newsletter">النشرة الإخبارية</h4>
+                    <p data-translate="Subscribe to receive updates">اشترك للحصول على التحديثات</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="البريد الإلكتروني" data-translate-placeholder="Email">
+                        <button type="submit" data-translate="Subscribe">اشترك</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> <span data-translate="All rights reserved">جميع الحقوق محفوظة</span> | <span data-translate="Made with">صنع بـ</span> <i class="fas fa-heart"></i> <span data-translate="by">بواسطة</span> أحمد فايز</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- زر العودة لأعلى -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- زر تبديل الوضع الليلي/النهاري -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- واجهة اختيار الألوان -->
+    <div class="color-picker-toggle">
+        <i class="fas fa-palette"></i>
+    </div>
+    <div class="color-picker-container">
+        <h5 data-translate="Color Theme">لون الموقع</h5>
+        <div class="color-options">
+            <div class="color-option active" style="background-color: #3e64ff;" data-color="#3e64ff"></div>
+            <div class="color-option" style="background-color: #6c63ff;" data-color="#6c63ff"></div>
+            <div class="color-option" style="background-color: #2ecc71;" data-color="#2ecc71"></div>
+            <div class="color-option" style="background-color: #e74c3c;" data-color="#e74c3c"></div>
+            <div class="color-option" style="background-color: #f39c12;" data-color="#f39c12"></div>
+            <div class="color-option" style="background-color: #9b59b6;" data-color="#9b59b6"></div>
+        </div>
+        <div class="custom-color">
+            <input type="color" id="custom-color-picker" value="#3e64ff">
+            <label for="custom-color-picker" data-translate="Choose Color">اختر اللون</label>
+        </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <!-- ملفات اللغة -->
+    <script src="lang/ar.js"></script>
+    <script src="lang/en.js"></script>
+    
+    <!-- ملفات JavaScript المخصصة -->
+    <script src="js/language-color.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+/* تحسينات الاستجابة لجميع مقاسات الشاشات */
+
+/* قواعد عامة للاستجابة */
+html {
+  font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* تحسينات للشاشات الكبيرة */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  .hero-title {
+    font-size: 56px;
+  }
+  
+  .section-title {
+    font-size: 42px;
+  }
+}
+
+/* تحسينات للشاشات المتوسطة */
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .container {
+    max-width: 1140px;
+  }
+  
+  .hero-title {
+    font-size: 42px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+/* تحسينات للأجهزة اللوحية */
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    max-width: 960px;
+    padding: 0 20px;
+  }
+  
+  .navbar-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 80%;
+    height: calc(100vh - 70px);
+    background-color: var(--card-bg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px 0;
+    transition: left var(--transition-normal);
+    box-shadow: var(--shadow-md);
+    z-index: 999;
+  }
+  
+  .rtl .navbar-menu {
+    left: auto;
+    right: -100%;
+    transition: right var(--transition-normal);
+  }
+  
+  .navbar-menu.active {
+    left: 0;
+  }
+  
+  .rtl .navbar-menu.active {
+    right: 0;
+    left: auto;
+  }
+  
+  .navbar-item {
+    margin: 10px 0;
+  }
+  
+  .navbar-toggle {
+    display: block;
+  }
+  
+  .about-container,
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  
+  .timeline-item::after {
+    left: 21px;
+  }
+  
+  .timeline-item:nth-child(odd)::after {
+    right: auto;
+    left: 21px;
+  }
+  
+  .timeline-item:nth-child(even)::after {
+    left: 21px;
+  }
+  
+  /* تعديلات الأزرار الثابتة */
+  .theme-toggle,
+  .color-picker-toggle,
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+  
+  .theme-toggle {
+    top: 85px;
+    right: 20px;
+  }
+  
+  .color-picker-toggle {
+    top: 140px;
+    right: 20px;
+  }
+  
+  .color-picker-container {
+    top: 140px;
+    right: 20px;
+    padding: 10px;
+  }
+  
+  .rtl .theme-toggle,
+  .rtl .color-picker-toggle,
+  .rtl .back-to-top {
+    right: auto;
+    left: 20px;
+  }
+  
+  .rtl .color-picker-container {
+    right: auto;
+    left: 20px;
+  }
+}
+
+/* تحسينات للأجهزة المحمولة */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    max-width: 720px;
+    padding: 0 15px;
+  }
+  
+  section {
+    padding: 70px 0;
+  }
+  
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 0 50px;
+  }
+  
+  .hero-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .hero-image {
+    position: relative;
+    width: 80%;
+    margin: 40px auto 0;
+    display: block;
+    opacity: 1;
+  }
+  
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .portfolio-filter {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .portfolio-filter-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 6px 15px;
+  }
+  
+  .contact {
+    padding: 30px;
+  }
+  
+  .contact-social {
+    justify-content: center;
+  }
+  
+  /* تحسينات لقسم آراء العملاء */
+  .testimonial-item {
+    padding: 25px;
+  }
+  
+  .testimonial-quote {
+    font-size: 60px;
+  }
+  
+  .testimonial-content {
+    font-size: 15px;
+  }
+  
+  .testimonial-avatar {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .testimonials-button {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* تحسينات للأزرار */
+  .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+}
+
+/* تحسينات للأجهزة المحمولة الصغيرة */
+@media (max-width: 576px) {
+  html {
+    font-size: 13px;
+  }
+  
+  .container {
+    max-width: 540px;
+    padding: 0 10px;
+  }
+  
+  .hero-title {
+    font-size: 32px;
+  }
+  
+  .section-title {
+    font-size: 26px;
+  }
+  
+  .about-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-buttons {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .about-buttons .btn {
+    width: 100%;
+  }
+  
+  .contact {
+    padding: 20px;
+  }
+  
+  .theme-toggle,
+  .color-picker-toggle,
+  .back-to-top {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .testimonial-item {
+    padding: 20px;
+  }
+  
+  .testimonial-quote {
+    font-size: 50px;
+  }
+  
+  .testimonial-content {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .testimonial-avatar {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .testimonial-name {
+    font-size: 16px;
+  }
+  
+  .testimonial-position {
+    font-size: 12px;
+  }
+  
+  .testimonials-button {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .testimonials-dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* تحسينات للأجهزة المحمولة الصغيرة جداً */
+@media (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+  
+  .hero-title {
+    font-size: 28px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  .navbar-logo {
+    font-size: 20px;
+  }
+  
+  .portfolio-filter-item {
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+  
+  .testimonial-item {
+    padding: 15px;
+  }
+  
+  .testimonial-content {
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .rtl .testimonial-avatar {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  
+  .testimonial-name {
+    font-size: 14px;
+  }
+  
+  .testimonial-position {
+    font-size: 11px;
+  }
+  
+  .theme-toggle,
+  .color-picker-toggle,
+  .back-to-top {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+  
+  .theme-toggle {
+    top: 80px;
+    right: 15px;
+  }
+  
+  .color-picker-toggle {
+    top: 125px;
+    right: 15px;
+  }
+  
+  .rtl .theme-toggle {
+    right: auto;
+    left: 15px;
+  }
+  
+  .rtl .color-picker-toggle {
+    right: auto;
+    left: 15px;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+}
+
+/* تحسينات للشاشات العالية الدقة */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* تحسينات لوضع الطباعة */
+@media print {
+  .navbar,
+  .theme-toggle,
+  .color-picker-toggle,
+  .back-to-top,
+  .portfolio-filter,
+  .testimonials-nav,
+  .testimonials-dots,
+  .contact-form {
+    display: none !important;
+  }
+  
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  section {
+    padding: 20px 0 !important;
+    page-break-inside: avoid;
+  }
+  
+  a {
+    text-decoration: underline;
+    color: #000 !important;
+  }
+  
+  .hero {
+    height: auto !important;
+  }
+  
+  .hero-image {
+    display: none;
+  }
+  
+  .about-container,
+  .contact-container {
+    grid-template-columns: 1fr !important;
+  }
+  
+  .portfolio-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+/* تحسينات لوضع التنقل باللوحة المفاتيح */
+:focus {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.btn:focus,
+.navbar-link:focus,
+.portfolio-filter-item:focus,
+.testimonials-button:focus,
+.testimonials-dot:focus,
+.social-link:focus,
+.theme-toggle:focus,
+.color-picker-toggle:focus,
+.back-to-top:focus {
+  outline: 3px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* تحسينات لوضع الشاشة المظلمة */
+@media (prefers-color-scheme: dark) {
+  body:not(.light-mode) {
+    --bg-color: var(--dark-bg);
+    --text-color: var(--light-text);
+    --card-bg: var(--dark-card);
+    --border-color: var(--dark-gray);
+  }
+}
+
+/* تحسينات لوضع تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="Thank you for contacting me">شكراً لتواصلك معي</title>
+    
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS - Animate On Scroll -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- ملفات CSS المخصصة -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            text-align: center;
+        }
+        
+        .thank-you-container {
+            background-color: var(--card-bg);
+            border-radius: var(--border-radius-lg);
+            padding: 50px;
+            box-shadow: var(--shadow-md);
+            max-width: 600px;
+            width: 90%;
+            animation: fadeInUp 1s ease forwards;
+        }
+        
+        .thank-you-icon {
+            font-size: 60px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .redirect-text {
+            font-size: 0.9rem;
+            margin-top: 20px;
+            opacity: 0.7;
+        }
+        
+        .back-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: var(--border-radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all var(--transition-fast);
+            margin-top: 20px;
+        }
+        
+        .back-button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            color: white;
+        }
+        
+        /* زر تبديل الوضع الليلي/النهاري */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        
+        /* زر تبديل اللغة */
+        .language-switch-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .language-switch {
+            padding: 8px 15px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+        }
+        
+        .language-switch:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- زر تبديل الوضع الليلي/النهاري -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- زر تبديل اللغة -->
+    <div class="language-switch-container">
+        <button class="language-switch" data-translate="English">English</button>
+    </div>
+    
+    <div class="thank-you-container">
+        <div class="thank-you-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h1 data-translate="Thank you for contacting me">شكراً لتواصلك معي</h1>
+        <p data-translate="You will be answered as soon as possible">سيتم الرد عليك في أقرب وقت ممكن</p>
+        <a href="index.html" class="back-button" data-translate="Back to Home">العودة للرئيسية</a>
+        <p class="redirect-text" data-translate="You will be redirected to the home page in a few seconds">سيتم إعادة توجيهك إلى الصفحة الرئيسية خلال ثوانٍ</p>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- ملفات اللغة -->
+    <script src="lang/ar.js"></script>
+    <script src="lang/en.js"></script>
+    
+    <!-- ملفات JavaScript المخصصة -->
+    <script src="js/language-color.js"></script>
+    
+    <script>
+        // إعادة التوجيه بعد 5 ثوانٍ
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 5000);
+    </script>
+</body>
+</html>

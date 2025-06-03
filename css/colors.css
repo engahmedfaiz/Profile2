@@ -1,0 +1,224 @@
+/* نظام الألوان المحسن للموقع الشخصي */
+
+:root {
+  /* الألوان الرئيسية الجديدة - أكثر إشراقاً وجاذبية */
+  --primary-color: #4f46e5; /* بنفسجي أزرق أكثر حيوية */
+  --secondary-color: #8b5cf6; /* بنفسجي أكثر إشراقاً */
+  --accent-color: #10b981; /* أخضر زمردي عصري */
+  
+  /* ألوان إضافية للتنوع والجاذبية */
+  --info-color: #0ea5e9; /* أزرق فاتح */
+  --warning-color: #f59e0b; /* برتقالي ذهبي */
+  --danger-color: #ef4444; /* أحمر نابض بالحياة */
+  --success-color: #22c55e; /* أخضر فاتح */
+  
+  /* تدرجات لونية للخلفيات والأزرار */
+  --gradient-primary: linear-gradient(135deg, #4f46e5, #8b5cf6);
+  --gradient-secondary: linear-gradient(135deg, #8b5cf6, #d946ef);
+  --gradient-accent: linear-gradient(135deg, #10b981, #34d399);
+  
+  /* ألوان محايدة - وضع النهار */
+  --light-bg: #f8fafc; /* خلفية فاتحة أكثر نقاءً */
+  --dark-text: #0f172a; /* نص داكن أكثر عمقاً */
+  --gray-dark: #334155; /* رمادي داكن أكثر دفئاً */
+  --gray-light: #e2e8f0; /* رمادي فاتح أكثر نعومة */
+  --card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* ألوان محايدة - وضع الليل */
+  --dark-bg: #0f172a; /* خلفية زرقاء داكنة بدلاً من الأسود */
+  --dark-bg-lighter: #1e293b; /* خلفية داكنة أفتح قليلاً للتباين */
+  --light-text: #f1f5f9; /* نص فاتح أكثر دفئاً */
+  --dark-gray: #475569; /* رمادي داكن أكثر حيوية */
+  --dark-card: #1e293b; /* خلفية البطاقات في الوضع الليلي */
+  --dark-card-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+  
+  /* متغيرات ديناميكية (تتغير حسب الوضع) */
+  --bg-color: var(--light-bg);
+  --text-color: var(--dark-text);
+  --card-bg: #ffffff;
+  --border-color: var(--gray-light);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  
+  /* تأثيرات الزجاج الضبابي */
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  --glass-blur: blur(10px);
+  
+  /* الظلال المحسنة */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+  
+  /* تأثيرات التوهج */
+  --glow-primary: 0 0 15px rgba(79, 70, 229, 0.5);
+  --glow-secondary: 0 0 15px rgba(139, 92, 246, 0.5);
+  --glow-accent: 0 0 15px rgba(16, 185, 129, 0.5);
+}
+
+/* وضع الليل المحسن */
+.dark-mode {
+  --bg-color: var(--dark-bg);
+  --text-color: var(--light-text);
+  --card-bg: var(--dark-card);
+  --border-color: var(--dark-gray);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  
+  /* تأثيرات الزجاج الضبابي في الوضع الليلي */
+  --glass-bg: rgba(30, 41, 59, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  
+  /* الظلال المحسنة للوضع الليلي */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.25);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* تطبيق تأثير الزجاج الضبابي */
+.glass-effect {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+/* أزرار متدرجة */
+.btn-gradient-primary {
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-primary:hover {
+  box-shadow: var(--glow-primary);
+  transform: translateY(-3px);
+}
+
+.btn-gradient-secondary {
+  background: var(--gradient-secondary);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-secondary:hover {
+  box-shadow: var(--glow-secondary);
+  transform: translateY(-3px);
+}
+
+.btn-gradient-accent {
+  background: var(--gradient-accent);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-gradient-accent:hover {
+  box-shadow: var(--glow-accent);
+  transform: translateY(-3px);
+}
+
+/* خلفيات متدرجة */
+.bg-gradient-primary {
+  background: var(--gradient-primary);
+}
+
+.bg-gradient-secondary {
+  background: var(--gradient-secondary);
+}
+
+.bg-gradient-accent {
+  background: var(--gradient-accent);
+}
+
+/* تأثيرات النص */
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* تأثيرات الحدود */
+.border-gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--card-bg), var(--card-bg)) padding-box,
+              var(--gradient-primary) border-box;
+}
+
+/* تأثيرات التوهج */
+.glow-primary {
+  box-shadow: var(--glow-primary);
+}
+
+.glow-secondary {
+  box-shadow: var(--glow-secondary);
+}
+
+.glow-accent {
+  box-shadow: var(--glow-accent);
+}
+
+/* ألوان الخط */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-info {
+  color: var(--info-color);
+}
+
+.text-warning {
+  color: var(--warning-color);
+}
+
+.text-danger {
+  color: var(--danger-color);
+}
+
+.text-success {
+  color: var(--success-color);
+}
+
+/* خلفيات الألوان */
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-accent {
+  background-color: var(--accent-color);
+}
+
+.bg-info {
+  background-color: var(--info-color);
+}
+
+.bg-warning {
+  background-color: var(--warning-color);
+}
+
+.bg-danger {
+  background-color: var(--danger-color);
+}
+
+.bg-success {
+  background-color: var(--success-color);
+}
