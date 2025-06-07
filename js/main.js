@@ -1,5 +1,6 @@
 // ملف JavaScript الرئيسي للموقع
 
+
 document.addEventListener('DOMContentLoaded', function() {
     'use strict';
 
